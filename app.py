@@ -12,4 +12,5 @@ def serve_image_and_log():
     return send_file("myfaith.jpg", mimetype='image/jpeg')
 
 if __name__ == "__main__":
-    app.run()
+    app.run(host='0.0.0.0', port=10000)
+
